@@ -1,0 +1,24 @@
+@charset "utf-8";
+@use "@fontsource/poppins/scss/mixins" as Poppins;
+@each $weight in (200,400,500,600,700) {
+  @include Poppins.fontFace(
+      $weight: $weight,
+      $fontDir: "@fontsource/poppins/files"
+  );
+}
+
+@import "@fontsource/material-icons";
+@import "@fontsource/material-icons-rounded";
+@import "@fontsource/material-icons-outlined";
+@import "@fontsource/material-icons-sharp";
+@import "@fontsource/material-icons-two-tone";
+
+body {
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: $regular;
+}
+
+p {
+  font-size: $fs-m;
+}

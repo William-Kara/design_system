@@ -1,0 +1,55 @@
+.qfc-header {
+  height: 6.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background;
+  color: $white;
+  padding: 0 $q-generic-space-8;
+
+  &__left-container, &__nav {
+    display: flex;
+    align-items: center;
+    gap: $q-generic-space-2;
+  }
+
+  &__left-container {
+    &__burger-container {
+      display: flex;
+      align-items: center;
+      padding-right: $q-generic-space-10;
+      gap: $q-generic-space-2;
+      font-size: $fs-xs;
+      background-color: transparent;
+      color: $white;
+      border: none;
+      cursor: pointer;
+    }
+    &__logo {
+      display: flex;
+      font-size: $fs-m-2;
+      align-items: center;
+    }
+  }
+}
+
+.fade-move,
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease, opacity 0.1s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(-100%) !important;
+}
+
+.fade-enter-from {
+  transform: translateX(-100%) translateY(0%) !important;
+}
+
+.fade-leave-active {
+  position: absolute;
+}

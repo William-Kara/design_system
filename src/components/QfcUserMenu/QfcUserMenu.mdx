@@ -1,0 +1,28 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcUserMenu from '@/components/QfcUserMenu/QfcUserMenu.vue';
+
+<Meta title="Elements/UserMenu" />
+
+# Definition
+
+Dropdown menu used for the users profil actions.
+
+## Props
+
+The following props are available for the QfcUserMenu component:
+
+<ArgTypes of={QfcUserMenu} />
+
+# Usage
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcUserMenu.scss';
+```
+
+# Definition
+
+```html
+<template>
+  <QfcUserMenu :links="links" avatar="avatar.svg" name="John Doe" />
+</template>
+```

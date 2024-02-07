@@ -1,0 +1,31 @@
+.footer {
+  font-size: 1.12rem;
+  .footer__logo img {
+    width: 52px;
+  }
+  .footer__link,
+  .footer__button {
+    display: block;
+  }
+  .footer__icon {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .footer__button {
+    margin-top: 1.5rem;
+  }
+}
+
+@include mobile {
+  .footer {
+    padding-top: 2rem;
+    margin-left: 2rem;
+    padding-bottom: 5rem;
+  }
+  .footer .footer__icon {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+}

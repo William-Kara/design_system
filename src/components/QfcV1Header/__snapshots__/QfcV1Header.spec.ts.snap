@@ -1,0 +1,16 @@
+// Vitest Snapshot v1
+
+exports[`QfcV1Header Component > should render correctly 1`] = `
+"<header data-v-acb3ac67=\\"\\" class=\\"qfc-header\\">
+  <div data-v-acb3ac67=\\"\\" class=\\"qfc-header__left-container\\">
+    <transition-group-stub data-v-acb3ac67=\\"\\" name=\\"fade\\" appear=\\"false\\" persisted=\\"false\\" css=\\"true\\"><button data-v-acb3ac67=\\"\\" class=\\"qfc-header__left-container__burger-container\\"><i data-v-acb3ac67=\\"\\" class=\\"material-icons-outlined\\"> menu </i> Menu </button>
+      <router-link data-v-acb3ac67=\\"\\" to=\\"/\\" class=\\"qfc-header__left-container__logo\\"><img data-v-acb3ac67=\\"\\" src=\\"/image-q.svg\\" width=\\"32\\" height=\\"25\\" alt=\\"logo\\"></router-link>
+    </transition-group-stub>
+  </div>
+  <nav data-v-acb3ac67=\\"\\" class=\\"qfc-header__nav\\">
+    <qfc-search-bar-stub data-v-acb3ac67=\\"\\"></qfc-search-bar-stub>
+    <qfc-button-action-stub data-v-acb3ac67=\\"\\" icon=\\"notifications\\" label=\\"notifications\\" isnotification=\\"false\\" isactive=\\"false\\"></qfc-button-action-stub>
+    <qfc-user-menu-stub data-v-acb3ac67=\\"\\"></qfc-user-menu-stub>
+  </nav>
+</header>"
+`;

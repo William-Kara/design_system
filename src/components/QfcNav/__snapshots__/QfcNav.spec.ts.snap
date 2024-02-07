@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`QfcNav Component > should render correctly 1`] = `
+"<div data-v-936bb0b7=\\"\\" class=\\"navbar-center\\">
+  <qfc-nav-item-stub data-v-936bb0b7=\\"\\" label=\\"Title 1\\" to=\\"\\"></qfc-nav-item-stub>
+  <qfc-nav-item-stub data-v-936bb0b7=\\"\\" label=\\"Title 2\\" to=\\"\\"></qfc-nav-item-stub>
+  <qfc-nav-item-stub data-v-936bb0b7=\\"\\" label=\\"Title 3\\" to=\\"\\"></qfc-nav-item-stub>
+  <qfc-nav-item-stub data-v-936bb0b7=\\"\\" label=\\"Title 4\\" to=\\"\\"></qfc-nav-item-stub>
+</div>"
+`;

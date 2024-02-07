@@ -1,0 +1,17 @@
+.box {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 0 !important;
+
+  &.--small {
+  }
+  &.--medium {
+    width: 27.4rem;
+    height: 32rem;
+  }
+  &.--large {
+  }
+}
+.--padding-small {
+    padding: $q-generic-space-4 !important;
+}

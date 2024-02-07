@@ -1,0 +1,17 @@
+// Vitest Snapshot v1
+
+exports[`QfcFooterForm Component > should render correctly 1`] = `
+"<footer data-v-843c6c56=\\"\\" class=\\"footer py-6\\">
+  <div data-v-843c6c56=\\"\\" class=\\"columns container has-text-centered\\">
+    <div data-v-843c6c56=\\"\\" class=\\"column footer__column\\">
+      <qfc-link-stub data-v-843c6c56=\\"\\" label=\\"link 1\\" href=\\"/link-1\\" isexternallink=\\"false\\" underline=\\"false\\"></qfc-link-stub>
+    </div>
+    <div data-v-843c6c56=\\"\\" class=\\"column footer__column\\">
+      <qfc-link-stub data-v-843c6c56=\\"\\" label=\\"link 2\\" href=\\"/link-2\\" isexternallink=\\"false\\" underline=\\"false\\"></qfc-link-stub>
+    </div>
+    <div data-v-843c6c56=\\"\\" class=\\"column footer__column\\">
+      <qfc-link-stub data-v-843c6c56=\\"\\" label=\\"link 3\\" href=\\"/link-3\\" isexternallink=\\"false\\" underline=\\"false\\"></qfc-link-stub>
+    </div>
+  </div>
+</footer>"
+`;

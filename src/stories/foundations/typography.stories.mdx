@@ -1,0 +1,143 @@
+import { Meta, Typeset } from '@storybook/blocks';
+import '@fontsource/poppins/latin-400.css';
+import '@fontsource/poppins/latin-500.css';
+import '@fontsource/poppins/latin-600.css';
+import '@fontsource/poppins/latin-700.css';
+
+<Meta title="foundations/Typography" />
+
+export const Poppins = {
+  type: {
+    primary: 'Poppins, sans-serif',
+  },
+  weight: {
+    light: 300,
+    regular: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+  },
+  size: {
+    xxs: '0.6rem',
+    xs: '1rem',
+    s: '1.12rem',
+    m: '1.25rem',
+    m2: '1.75rem',
+    m3: '2rem',
+    l: '2.25rem',
+    xl: '2.80rem',
+    xxl: '3.75rem',
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+
+Interligne should be 1.5 .
+
+## Body text
+
+Body text in paragraph should be in :
+
+**Font:** Poppins, Regular
+**Size:** 1.12rem, 1.25rem
+
+<Typeset
+  fontSizes={[Poppins.size.s, Poppins.size.m]}
+  fontWeight={Poppins.weight.regular}
+  sampleText={SampleText}
+  fontFamily={Poppins.type.primary}
+/>
+
+Text in input should be in :
+
+**Font:** Poppins, Medium
+**Size:** 1rem
+
+<Typeset
+  fontSizes={[Poppins.size.xs]}
+  fontWeight={Poppins.weight.medium}
+  sampleText={SampleText}
+  fontFamily={Poppins.type.primary}
+/>
+
+A extra small font is also available :
+
+**Font:** Poppins, Medium
+**Size:** 0.6rem
+
+<Typeset
+  fontSizes={[Poppins.size.xxs]}
+  fontWeight={Poppins.weight.regular}
+  sampleText={SampleText}
+  fontFamily={Poppins.type.primary}
+/>
+
+## Titles
+
+Bigger font sizes are used for titles.
+
+## Card Title
+
+Card titles used :
+
+**Font:** Poppins, light
+**Size:** 1.75rem
+
+<Typeset
+  fontSizes={[Poppins.size.m2]}
+  fontWeight={Poppins.weight.light}
+  sampleText={'Card Title'}
+  fontFamily={Poppins.type.primary}
+/>
+
+## Standart Title
+
+### H1
+
+**Font:** Poppins, bold
+**Size:** 2.80rem (mobile), 3.75rem (tablet & desktop)
+
+<Typeset
+  fontSizes={[Poppins.size.xxl, Poppins.size.xl]}
+  fontWeight={Poppins.weight.bold}
+  sampleText={'Title 1'}
+  fontFamily={Poppins.type.primary}
+/>
+
+### H2
+
+**Font:** Poppins, bold
+**Size:** 2rem (mobile), 2.80rem (tablet & desktop)
+
+<Typeset
+  fontSizes={[Poppins.size.xl, Poppins.size.m3]}
+  fontWeight={Poppins.weight.semibold}
+  sampleText={'Title 2'}
+  fontFamily={Poppins.type.primary}
+/>
+
+### H3
+
+**Font:** Poppins, bold
+**Size:** 1.75rem (mobile), 2.25rem (tablet & desktop)
+
+<Typeset
+  fontSizes={[Poppins.size.xl, Poppins.size.m3]}
+  fontWeight={Poppins.weight.bold}
+  sampleText={'Title 3'}
+  fontFamily={Poppins.type.primary}
+/>
+
+### H5
+
+**Font:** Poppins, bold
+**Size:** 1.25rem (mobile, tablet & desktop)
+
+<Typeset
+  fontSizes={[Poppins.size.m]}
+  fontWeight={Poppins.weight.bold}
+  sampleText={'Title 2'}
+  fontFamily={Poppins.type.primary}
+/>

@@ -1,0 +1,40 @@
+.qfc-btn-sidebar {
+  width: 100%;
+  height: 4.31rem;
+  display: flex;
+  align-items: center;
+  padding: $q-generic-space-4;
+  background-color: $background;
+  color: $grey-manatee;
+  border-radius: $br-xs;
+  border: $primary;
+  text-align: left;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: $q-generic-space-3;
+
+    &__icon {
+      cursor: pointer;
+    }
+    &__label {
+      font-size: $fs-xs;
+    }
+  }
+
+  &:hover {
+    background-color: $black-lighten;
+    color: $white;
+  }
+
+  &.router-link-exact-active {
+    color: $primary;
+    background-color: $black-lighten;
+  }
+}
+
+.qfc-btn-sidebar,
+.qfc-btn-sidebar * {
+  cursor: pointer;
+}

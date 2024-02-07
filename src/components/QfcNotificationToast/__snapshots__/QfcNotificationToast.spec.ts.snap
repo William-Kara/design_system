@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcNotificationToast Component > should render correctly 1`] = `"<qfc-notification-box-stub data-v-a30cdd17=\\"\\" type=\\"info\\"></qfc-notification-box-stub>"`;

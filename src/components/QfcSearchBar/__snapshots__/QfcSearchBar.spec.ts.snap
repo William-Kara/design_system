@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`QfcButtonAction Component > should render correctly 1`] = `
+"<qfc-button-action-stub data-v-2c5febf1=\\"\\" icon=\\"search\\" label=\\"search\\" isnotification=\\"false\\" isactive=\\"false\\"></qfc-button-action-stub>
+<transition-stub data-v-2c5febf1=\\"\\" appear=\\"false\\" persisted=\\"true\\" css=\\"true\\">
+  <div data-v-2c5febf1=\\"\\" class=\\"search-field\\" style=\\"display: none;\\"><input data-v-2c5febf1=\\"\\" name=\\"label\\" placeholder=\\"label\\" class=\\"search-field__input\\"><button data-v-2c5febf1=\\"\\" class=\\"search-field__button\\" role=\\"link\\"><span data-v-2c5febf1=\\"\\" class=\\"search-field__button__icon material-icons-outlined\\">search</span></button></div>
+</transition-stub>"
+`;

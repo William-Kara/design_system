@@ -1,0 +1,25 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcNotificationBox from '@/components/QfcNotificationBox/QfcNotificationBox.vue';
+
+<Meta title="Modules/Notifications/NotificationBox" />
+
+# Definition & Usage
+
+## Props
+
+The following props are available for the QfcSidebar component:
+
+<ArgTypes of={QfcNotificationBox} />
+
+To use QfcNotificationBox, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcBox.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcNotificationBox.scss';
+```
+
+```html
+<template>
+  <QfcNotificationBox type="success" />
+</template>
+```

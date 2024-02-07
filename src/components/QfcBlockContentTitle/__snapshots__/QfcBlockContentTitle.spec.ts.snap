@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`QfcBlockContentTitle Component > should render correctly 1`] = `
+"<div data-v-890b97bd=\\"\\" class=\\"qfc-block\\">
+  <div data-v-890b97bd=\\"\\" class=\\"qfc-block__text\\">
+    <h2 data-v-890b97bd=\\"\\" class=\\"qfc-block__text__title\\">Nous construisons votre nouvelle plateforme de e-learning.</h2>
+    <p data-v-890b97bd=\\"\\" class=\\"qfc-block__text__paragraph\\">Vous souhaitez acquérir de nouvelles compétences ou simplement vous perfectionner sur un sujet en particulier ?</p>
+  </div>
+  <div data-v-890b97bd=\\"\\" class=\\"qfc-block__content\\">
+    <qfc-tag-list-stub data-v-890b97bd=\\"\\" taglist=\\"Cybersécurité,Développement,Design\\" class=\\"qfc-block__content__tags\\"></qfc-tag-list-stub>
+    <qfc-button-stub data-v-890b97bd=\\"\\" icon=\\"false\\" isdisabled=\\"false\\" label=\\"Découvrez notre pédagogie\\" secondary=\\"false\\" size=\\"medium\\" class=\\"qfc-block__content__button\\"></qfc-button-stub>
+  </div><video data-v-890b97bd=\\"\\" class=\\"qfc-block__media\\" src=\\"/public/accueil-animation.mp4\\" loop=\\"\\" autoplay=\\"\\"> Sorry, your browser doesn't support HTML5 video tag. </video>
+</div>"
+`;

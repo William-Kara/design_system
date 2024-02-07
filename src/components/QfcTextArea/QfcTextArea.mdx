@@ -1,0 +1,49 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import { Story } from '@storybook/addon-docs';
+import QfcTextArea from '@/components/QfcTextArea/QfcTextArea.vue';
+
+<Meta title="Elements/Inputs/TextArea" />
+
+# Definition & Usage
+
+A customizable textarea component.
+
+## Props
+
+The following props are available for the QfcTextArea component:
+
+<ArgTypes of={QfcTextArea} />
+
+When the isRequired prop is set to true, an asterisk appears to the right of the label.
+
+The input field become red when the errorMessage prop is set.
+
+# Declinaison
+
+## Basic
+
+<Story name="Basic" id="elements-inputs-textarea--primary" />
+
+## Error
+
+<Story name="Error" id="elements-inputs-textarea--error" />
+
+## Disabled
+
+<Story name="Disabled" id="elements-inputs-textarea--disabled" />
+
+## Required
+
+<Story name="Required" id="elements-inputs-textarea--required" />
+
+## Background color
+
+The background color of the input field can be customized by using hexadecimal color codes.
+
+```html
+<template>
+  <QfcTextArea label="Name" :isRequired="true" backgroundColor="#f5f5f5" />
+</template>
+```
+
+The background color act as background for textfield and the label moving up when the input is focused.

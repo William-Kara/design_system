@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`QfcSidebar Component > should render correctly 1`] = `
+"<aside data-v-46033538=\\"\\" class=\\"qfc-sidebar qfc-sidebar--open\\">
+  <div data-v-46033538=\\"\\" class=\\"qfc-sidebar__header\\"><button data-v-46033538=\\"\\"><i data-v-46033538=\\"\\" class=\\"material-icons-outlined\\"> menu </i></button></div>
+  <nav data-v-46033538=\\"\\" class=\\"qfc-sidebar__nav\\">
+    <qfc-button-sidebar-stub data-v-46033538=\\"\\" icon=\\"space_dashboard\\" label=\\"Dashboard\\" to=\\"/dashboard\\" class=\\"qfc-sidebar__item\\"></qfc-button-sidebar-stub>
+    <qfc-button-sidebar-stub data-v-46033538=\\"\\" icon=\\"people\\" label=\\"FAQ/Communauté Discord\\" to=\\"/contacts\\" class=\\"qfc-sidebar__item\\"></qfc-button-sidebar-stub>
+    <qfc-button-sidebar-stub data-v-46033538=\\"\\" icon=\\"settings\\" label=\\"Settings\\" to=\\"/settings\\" class=\\"qfc-sidebar__item\\"></qfc-button-sidebar-stub>
+  </nav>
+</aside>"
+`;

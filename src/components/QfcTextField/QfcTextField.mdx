@@ -1,0 +1,69 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import { Story } from '@storybook/addon-docs';
+import QfcTextField from '@/components/QfcTextField/QfcTextField.vue';
+
+<Meta title="Elements/Inputs/TextField" />
+
+# Definition
+
+A customizable text field component This component is a text field that can be used for various types of input, such as text, password, email and number.
+
+## Props
+
+The following props are available for the QfcTextField component:
+
+<ArgTypes of={QfcTextField} />
+When the isRequired prop is set to true, an asterisk appears to the right of the label.
+
+An eye icon to toggle the visibility of the input when the type is set to “password” is available.
+
+The input field become red when the errorMessage prop is set. But also when the input get the :invalid pseudo-class that can happen when the input is required and empty or when the input doesn't match the pattern asked.
+
+# Usage
+
+To use QfcTextField, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcTextField.scss';
+
+```
+
+```html
+<template>
+  <QfcTextField label="Name" :isRequired="true" />
+</template>
+```
+
+# Declinaison
+
+## Basic
+
+<Story name="Basic" id="elements-inputs-textfield--primary" />
+
+## Error
+
+<Story name="Error" id="elements-inputs-textfield--error" />
+
+## Disabled
+
+<Story name="Disabled" id="elements-inputs-textfield--disabled" />
+
+## Password
+
+<Story name="Password" id="elements-inputs-textfield--password" />
+
+## Required
+
+<Story name="Required" id="elements-inputs-textfield--required" />
+
+## Background color
+
+The background color of the input field can be customized by using hexadecimal color codes.
+
+```html
+<template>
+  <QfcTextField label="Name" :isRequired="true" backgroundColor="#f5f5f5" />
+</template>
+```
+
+The background color act as background for textfield and the label moving up when the input is focused.

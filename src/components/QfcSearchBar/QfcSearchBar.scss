@@ -1,0 +1,59 @@
+@mixin input-active-focus {
+  border: $border-active;
+  color: $active;
+  + .text-field__label,
+  ~ .text-field__img {
+    color: $active;
+  }
+}
+@mixin input-hover {
+  border: $border-hover;
+  color: $text;
+  + .text-field__label,
+  ~ .text-field__img {
+    color: $text;
+  }
+}
+
+.search-field {
+  position: relative;
+  color: $grey-alto;
+  height: 56.8px;
+  &__input {
+    width: inherit;
+    background: $black;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: $border-default;
+    border-radius: $br-s;
+    &::placeholder {
+      color: transparent;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+    &:hover,
+    &:active {
+      @include input-hover;
+    }
+    &:focus {
+      @include input-active-focus;
+    }
+  }
+
+  &__button {
+    background: $black;
+    border: none;
+    padding: 0;
+    position: relative;
+    top: $q-generic-space-2;
+    right: $q-generic-space-6;
+    cursor: pointer;
+    &__icon {
+      color: $white;
+      font-size: $fs-m-2;
+    }
+  }
+}

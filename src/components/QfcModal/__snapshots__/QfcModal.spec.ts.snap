@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`QfcModal Component > should render correctly 1`] = `
+"<div data-v-9477621e=\\"\\" role=\\"dialog\\" class=\\"modal is-active\\">
+  <div data-v-9477621e=\\"\\" class=\\"modal-background\\"></div>
+  <div data-v-9477621e=\\"\\" class=\\"modal-content\\">
+    <qfc-box-stub data-v-9477621e=\\"\\" size=\\"fullwidth\\" padding=\\"medium\\" class=\\"q-modal-card\\"></qfc-box-stub>
+  </div>
+</div>"
+`;

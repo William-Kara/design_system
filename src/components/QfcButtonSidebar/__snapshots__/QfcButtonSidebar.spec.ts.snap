@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcButtonSidebar Component > should render correctly 1`] = `"<router-link data-v-cb1c8373=\\"\\" to=\\"/dashboard\\" class=\\"qfc-btn-sidebar\\" role=\\"link\\"><span data-v-cb1c8373=\\"\\" class=\\"qfc-btn-sidebar__content\\"><span data-v-cb1c8373=\\"\\" class=\\"qfc-btn-sidebar__content__icon material-icons-outlined\\">space_dashboard</span><label data-v-cb1c8373=\\"\\" class=\\"qfc-btn-sidebar__content__label\\">Dashboard</label></span></router-link>"`;

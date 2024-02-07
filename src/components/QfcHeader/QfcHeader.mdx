@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcHeader from '@/components/QfcHeader/QfcHeader.vue';
+
+<Meta title="Modules/Headers/Header" />
+
+# Definition
+
+QfcHeader is placed at the top of the page. It contains a logo and includes the QfcNav component.
+
+## Props
+
+The following props are available for the QfcHeader component:
+
+<ArgTypes of={QfcHeader} />
+
+# Usage
+
+To use QfcHeader, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/components/navbar.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcHeader.scss';
+```
+
+```html
+<template>
+  <QfcHeader :navItems="navItems" :endItems="endItems"> </QfcHeader>
+</template>
+```

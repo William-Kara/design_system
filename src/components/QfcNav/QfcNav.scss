@@ -1,0 +1,15 @@
+@include desktop {
+  .navbar-center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@include touch {
+  .navbar-center {
+    .navbar-item {
+      margin-bottom: 1rem;
+    }
+  }
+}

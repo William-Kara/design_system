@@ -1,0 +1,35 @@
+$edge-offset: $q-generic-space-1;
+$parent-border-radius: $br-m;
+
+.qfc-notification-box {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  &__edge {
+    width: $edge-offset;
+    margin-right: -$edge-offset;
+    height: calc(100% - 1.8*$parent-border-radius );
+    border-radius: 0 1rem 1rem 0;
+    z-index: 1;
+  }
+  &__content-container {
+    flex: 1;
+  }
+}
+
+.--info {
+  background-color: $info;
+}
+.--success {
+  background-color: $success;
+}
+.--warning {
+  background-color: $warning;
+}
+.--danger {
+  background-color: $danger;
+}
+.--none {
+  background-color: transparent;
+}

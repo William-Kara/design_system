@@ -1,0 +1,45 @@
+.qfc-notification-toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__content {
+    display: flex;
+    gap: $q-generic-space-3;
+    align-items: center;
+
+    &__texts {
+      display: flex;
+      gap: 0 $q-generic-space-3;
+      font-size: $fs-m;
+      flex-wrap: wrap;
+
+      .texts__title {
+        font-weight: $bold;
+      }
+      .texts__description {
+        font-weight: $medium;
+      }
+    }
+
+    &__close-button:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.--color-info {
+  color: $info;
+}
+.--color-success {
+  color: $success;
+}
+.--color-warning {
+  color: $warning;
+}
+.--color-danger {
+  color: $danger;
+}
+.--color-block {
+  width: 100%;
+}

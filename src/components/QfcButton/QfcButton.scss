@@ -1,0 +1,71 @@
+.qfc-btn {
+  position: relative;
+  transition: $transition-time;
+  border-radius: $br-xs;
+  background-color: $primary;
+  border: $primary;
+
+  &.qfc-btn--lg {
+    font-size: $fs-m;
+    height: 3.5rem;
+  }
+  &.qfc-btn--md {
+    font-size: $fs-m;
+    height: 2.8rem;
+  }
+  &.qfc-btn--sm {
+    font-size: $fs-s;
+    height: 2.3rem;
+  }
+
+  &.qfc-btn--secondary {
+    background-color: $background;
+    border: 1px solid $border;
+    color: $text;
+    &:hover:enabled {
+      color: $text;
+      background-color: $hover-dark;
+    }
+    &:focus {
+      border: 1px solid white;
+      outline-offset: 0px;
+      outline: 3px solid $secondary;
+    }
+  }
+  &__icon {
+    padding-right: 0.25rem;
+  }
+  &:after {
+    font-family: 'Material Icons Outlined';
+    content: 'trending_flat';
+    position: absolute;
+    opacity: 0;
+    //right: -20px;
+    left: calc(100% - 2.3rem);
+    transition: $transition-time-fast;
+  }
+  &:hover:enabled {
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+
+    &::after {
+      opacity: 1;
+      right: 1rem;
+    }
+  }
+  &:active {
+    background-color: $primary-active;
+  }
+  &:focus {
+    outline: 1px solid $primary;
+    outline-offset: 2px;
+  }
+  &:disabled {
+    color: $grey-alto;
+    background-color: $disabled;
+    opacity: 1;
+    &:after {
+      content: '';
+    }
+  }
+}

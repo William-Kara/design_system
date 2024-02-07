@@ -1,0 +1,27 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcNotificationToast from '@/components/QfcNotificationToast/QfcNotificationToast.vue';
+
+<Meta title="Modules/Notifications/NotificationToast" />
+
+# Definition & Usage
+
+## Props
+
+The following props are available for the QfcNotificationToast component:
+
+<ArgTypes of={QfcNotificationToast} />
+
+To use QfcNotificationToast, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcBox.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcNotificationToast.scss';
+```
+
+```html
+<template>
+  <QfcNotificationToast :title="title" :description="description" :type="type" />
+</template>
+```
+
+- `inline` - Boolean - If true, the notification will be displayed inline is the content size allow it. Default: `true`

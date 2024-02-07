@@ -1,0 +1,52 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import { Story } from '@storybook/addon-docs';
+import QfcModal from '@/components/QfcModal/QfcModal.vue';
+
+<Meta title="Modules/Modal" />
+
+# Definition
+
+This is a QfcModal module that is used to display a modal with an image, title, and content after clicking a button. It's using QfcBox and QfcButton.
+
+## Props
+
+The following props are available for the QfcModal component:
+
+<ArgTypes of={QfcModal} />
+
+# Usage
+
+To use QfcModal, style needs to be imported separately.
+
+```sass
+
+@import '@website/design-system-vuejs/dist/styles/bulma/components/modal.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcModal.scss';
+```
+
+```html
+<template>
+  <QfcModal v-model:isOpen="isOpen" title="Lorem" content="lorem ipsum" icon="/myImg.svg" />
+</template>
+```
+
+Modal can also be used with template slots, allowing you to customize the title and content with html.You can also use the v-model:isOpen prop to control the modal's state.
+
+```html
+<template>
+  <QfcModal v-model:isOpen="isOpen">
+    <template #title>Title</template>
+    <template #content>Content</template>
+  <QfcModal>
+</template>
+
+<script>
+ const isOpen = ref(false);
+</script>
+```
+
+Clicking outside of the modal will allow you to close it. You can also close it by clicking on the close button.
+
+# Exemple
+
+<Story name="Primary" id="components-modal--primary" />

@@ -1,0 +1,13 @@
+.qfc-link {
+  font-weight: $medium;
+  font-size: 1.12rem; //m1
+  color: $text;
+  text-decoration: none;
+  &:hover {
+    color: $text;
+    text-decoration: underline;
+  }
+  &--underline {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`Toggle Component > should render correctly 1`] = `"<label data-v-fef9f429=\\"\\" class=\\"switch\\"><input data-v-fef9f429=\\"\\" type=\\"checkbox\\"><span data-v-fef9f429=\\"\\" class=\\"slider\\"></span><span data-v-fef9f429=\\"\\" class=\\"text\\">Toggle</span></label>"`;

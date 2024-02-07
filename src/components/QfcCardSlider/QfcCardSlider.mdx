@@ -1,0 +1,37 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import { Story } from '@storybook/addon-docs';
+import QfcCardSlider from '@/components/QfcCardSlider/QfcCardSlider.vue';
+
+<Meta title="Modules/CardSlider" />
+
+# Definition
+
+Slider used to display a list of cards.
+
+Slider will display as many cards as possible on the width available.
+
+If there are more cards than can be displayed, the slider will be horizontally scrollable.
+
+## Props
+
+The following props are available for the QfcCardSlider component:
+
+<ArgTypes of={QfcCardSlider} />
+
+# Usage
+
+To use QfcCardSlider, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcCardSlider.scss';
+```
+
+```html
+<template>
+  <QfcCardSlider :cards="cards" />
+</template>
+```
+
+# Exemple
+
+<Story name="Primary" id="modules-cardslider--primary" />

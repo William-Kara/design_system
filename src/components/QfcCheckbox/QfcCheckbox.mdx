@@ -1,0 +1,61 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcCheckbox from '@/components/QfcCheckbox/QfcCheckbox.vue';
+
+<Meta title="Elements/Buttons/Checkbox" />
+
+# Definition
+
+A customizable checkbox component that can be used for various forms and inputs.
+
+## Props
+
+The following props are available for the QfcCheckbox component:
+
+<ArgTypes of={QfcCheckbox} />
+
+# Usage
+
+To use QfcCheckbox, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcCheckbox.scss';
+```
+
+## With Array
+
+```html
+<template v-for="item in items" key="item.prop1">
+  <QfcCheckbox :label="item.prop1" v-model="selectedItems" :value="item" />
+</template>
+
+<script>
+  const items = [
+    { prop1: 'First Item', prop2: 'First Item Description' },
+    { prop1: 'Second Item', prop2: 'Second Item Description' },
+    { prop1: 'Third Item', prop2: 'Third Item Description' },
+  ];
+  const selectedItems = ref([]);
+</script>
+```
+
+## Alone
+
+```html
+<template>
+  <QfcCheckbox :label="Label" v-model="isSelected" />
+</template>
+
+<script>
+  const isSelected = ref(false);
+</script>
+```
+
+## Slot
+
+Label can also be added as a slot.
+
+```html
+<template>
+  <QfcCheckbox> {{ label }} </QfcCheckbox>
+</template>
+```

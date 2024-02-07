@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcBack Component > should render correctly 1`] = `"<a data-v-b842fc57=\\"\\" class=\\"qfc-back\\" href=\\"/\\"><span data-v-b842fc57=\\"\\" class=\\"qfc-back__icon material-icons-outlined\\" width=\\"168\\" height=\\"18\\">arrow_back</span><span data-v-b842fc57=\\"\\" class=\\"qfc-back__link\\">Retour à l’accueil</span></a>"`;

@@ -1,0 +1,47 @@
+import { ArgTypes, Meta, Story } from '@storybook/blocks';
+import QfcToggle from '@/components/QfcToggle/QfcToggle.vue';
+
+<Meta title="Elements/Buttons/Toggle" />
+
+# Definition & Usage
+
+QfcToggle is a toggle button that should be use for boolean value.
+
+## Props
+
+The following props are available for the QfcToggle component:
+
+<ArgTypes of={QfcToggle} />
+
+## Usage
+
+To use QfcToggle, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcToggle.scss';
+
+```
+
+```html
+<template>
+  <QfcToggle v-model="myModel" :disabled="isDisabled" label="Toggle Label" />
+</template>
+```
+
+# Declinaison
+
+## Basic
+
+<Story name="Basic" id="elements-buttons-toggle--primary" />
+
+## Checked
+
+<Story name="Checked" id="elements-buttons-toggle--checked" />
+
+## Disabled
+
+<Story name="Disabled" id="elements-buttons-toggle--disabled" />
+
+## Checked and Disabled
+
+<Story name="Checked and Disabled" id="elements-buttons-toggle--checked-and-disabled" />

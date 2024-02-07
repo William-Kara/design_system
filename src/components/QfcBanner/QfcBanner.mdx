@@ -1,0 +1,30 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcBanner from '@/components/QfcBanner/QfcBanner.vue';
+
+<Meta title="Elements/Banner" />
+
+# Definition
+
+QfcBanner that serves as a banner. It has a gray background color and a light padding (1.5rem 0) applied to its body.
+
+## Props
+
+The following props are available for the QfcBanner component:
+
+<ArgTypes of={QfcBanner} />
+
+# Usage
+
+To use QfcBanner, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcBanner.scss';
+```
+
+```html
+<template>
+  <QfcBanner>
+    <h1></h1>
+  </QfcBanner>
+</template>
+```

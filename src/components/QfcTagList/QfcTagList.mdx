@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcTagList from '@/components/QfcTagList/QfcTagList.vue';
+
+<Meta title="Modules/TagList" />
+
+# Definition & Usage
+
+## Props
+
+The following props are available for the QfcTagList component:
+
+<ArgTypes of={QfcTagList} />
+
+# Usage
+
+To use QfcTagList, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/elements/tag.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcTag.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcTagList.scss';
+
+```
+
+```html
+<template>
+  <QfcTagList :tagList="['tag1', 'tag2', 'tag3']" />
+</template>
+```

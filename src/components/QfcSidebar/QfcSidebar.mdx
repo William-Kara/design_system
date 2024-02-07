@@ -1,0 +1,41 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcSidebar from '@/components/QfcSidebar/QfcSidebar.vue';
+import QfcButtonSidebar from '@/components/QfcButtonSidebar/QfcButtonSidebar.vue';
+
+<Meta title="Modules/Sidebar" />
+
+# Definition & Usage
+
+## Description
+
+The QfcSidebar component is a vertical menu placed on the left side of a webpage or application. It is used to navigate between different pages or sections of the application.
+
+## Usage
+
+To use QfcSidebar, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcSidebar.scss';
+```
+
+```html
+<template>
+  <QfcSidebar v-model:isOpen="isSidebarOpen" :items="sidebarItems" />
+</template>
+```
+
+## Props
+
+The following props are available for the QfcSidebar component:
+
+<ArgTypes of={QfcSidebar} />
+
+Items prop take props as such:
+
+<ArgTypes of={QfcButtonSidebar} />
+
+- Please note that the `isOpen` prop is used to toggle the visibility of the sidebar menu.
+
+- Note that the `screenId` prop can be set to `true` (any string) to enable the feature that pushes the main content
+  screen when
+  the sidebar is opened. The screenId prop is used to specify the id of the main content screen element. By default, this feature is **disabled**.

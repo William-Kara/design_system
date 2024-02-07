@@ -1,0 +1,45 @@
+import { ArgTypes, Meta, Story } from '@storybook/blocks';
+import QfcCard from '@/components/QfcCard/QfcCard.vue';
+
+<Meta title="Modules/Card" />
+
+# Definition
+
+This is a QfcCard module that is used to display a box with an icon or video animated icon, title, and content.
+It's using QfcBox.
+
+Size small and large aren't available yet.
+
+## Props
+
+The following props are available for the QfcCard component:
+
+<ArgTypes of={QfcCard} />
+
+# Usage
+
+To use QfcCard, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcCard.scss';
+```
+
+```html
+<template>
+  <QfcCard size="medium" title="Lorem" content="lorem" icon="timer" src="srcVideo" />
+</template>
+```
+
+# Declinaison
+
+## FullWidth
+
+<Story name="Primary" id="modules-card--primary" />
+
+## Medium
+
+<Story name="Medium" id="modules-card--medium" />
+
+##### With video icon
+
+<Story name="Video Icon" id="modules-card--video-icon" />

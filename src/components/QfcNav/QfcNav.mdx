@@ -1,0 +1,33 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcNav from '@/components/QfcNav/QfcNav.vue';
+
+<Meta title="Elements/Nav" />
+
+# Definition
+
+QfcNav Component provides current position in the application and simple navigation.
+
+## Props
+
+The following props are available for the QfcNav component:
+
+<ArgTypes of={QfcNav} />
+
+# Usage
+
+The navItems array prop is required. Each object should contains a text ("label") and a link ("to").
+
+To use QfcNav, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/components/navbar.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcNav.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcNavItem.scss';
+
+```
+
+```html
+<template>
+  <QfcNav :navItems="navItems" />
+</template>
+```

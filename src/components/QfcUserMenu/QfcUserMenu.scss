@@ -1,0 +1,88 @@
+@import '../../styles/bulma/components/dropdown';
+
+.dropdown {
+  min-width: 15rem;
+  .dropdown-trigger {
+    width: 100%;
+    .qfc-dropdown-button {
+      background-color: $background;
+      color: $white;
+      border-radius: $br-xs;
+      border: $primary;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      font-size: $fs-s;
+      display: flex;
+      justify-content: space-between;
+
+      .qfc-dropdown__name {
+        margin-right: auto;
+      }
+      &:hover {
+        background-color: $black-hover;
+        color: $white;
+      }
+      &__icon {
+        margin-right: 1rem;
+        i {
+          font-size: $fs-m-2;
+        }
+        &__active {
+          animation-name: rotate;
+          animation-duration: 0.5s;
+          @keyframes rotate {
+            0% {
+              transform: rotate(0deg)
+            }
+            100% {
+              transform: rotate(180deg);
+            }
+          }
+          transform: rotate(180deg);
+        }
+        &__inactive {
+          animation-name: rotateBack;
+          animation-duration: 0.5s;
+          @keyframes rotateBack {
+            0% {
+              transform: rotate(180deg)
+            }
+            100% {
+              transform: rotate(0deg);
+            }
+          }
+        }
+      }
+      .qfc-dropdown-avatar {
+        &__holder {
+          border-radius: $fs-xl;
+          width: $fs-xl;
+          height: $fs-xl;
+          overflow: hidden;
+          margin: 5px 15px;
+        }
+        &__img {
+          width: $fs-xl;
+        }
+      }
+    }
+  }
+  .qfc-dropdown-menu {
+    width: 100%;
+    &__content {
+      background-color: $background;
+      border-radius: $br-xs;
+      &__item {
+        border-radius: $br-xs;
+        padding: $q-generic-space-3;
+        font-size: $fs-s;
+        &:hover {
+          background-color: $black-hover;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+

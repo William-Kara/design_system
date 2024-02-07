@@ -1,0 +1,52 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcBlockContentTitle from '@/components/QfcBlockContentTitle/QfcBlockContentTitle.vue';
+
+<Meta title="Prototypes/BlockContentTitle" />
+
+# Definition
+
+QfcBlockImgTitle prototype is used to display:
+
+- title
+- paragraph
+- video
+- CTA button
+- tags (optional)
+
+## Props
+
+The following props are available for the QfcBlockContentTitle component:
+
+<ArgTypes of={QfcBlockContentTitle} />
+
+# Usage
+
+To use QfcBlockImgTitle, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcBlockContentTitle.scss';
+```
+
+The button trigger a click event under the name of "button-click"
+
+```html
+<template>
+  <QfcBlockImgTitle @button-click="$router.push('/unknown')" />
+</template>
+```
+
+BlockContentTitle can also be used with template slots, allowing you to customize the title and paragraph with html like so
+
+```html
+<template>
+  <QfcBlockImgTitle >
+        <template #title>
+            <b>Lorem</b> ipsum
+        </template>
+        <template #paragraph>
+            Lorem <b>ipsum</b>
+        </template>
+      </QfcBlockContentTitle>
+  <QfcBlockImgTitle />
+</template>
+```

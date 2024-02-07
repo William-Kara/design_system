@@ -1,0 +1,76 @@
+.qfc-checkbox {
+  display: flex;
+
+  input {
+    appearance: none;
+  }
+
+  .qfc-checkbox__label {
+    color: $text;
+    position: relative;
+    bottom: 2px;
+  }
+}
+
+.qfc-checkbox__checkmark {
+  position: relative;
+  outline-offset: -1px;
+  outline: 2px solid $white;
+  background-color: $background;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+  border-radius: 3px;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $grey-mineshaft;
+  }
+  &:focus {
+    box-shadow: $grey-boulder 0 0 0 3px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 0.4em;
+    top: 0.15em;
+    width: 0.45em;
+    height: 0.8em;
+    border: solid $background;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+    transition: all $transition-time ease-in-out;
+  }
+}
+
+input:checked ~ .qfc-checkbox__checkmark {
+  box-shadow: $white 0 0 0 1px;
+  background-color: $white;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+
+  &:after {
+    display: block;
+  }
+  &:hover {
+    outline-offset: 1px;
+    outline: 2px solid $secondary;
+  }
+  &:focus {
+    outline-offset: 0;
+    outline: 3px solid $secondary;
+  }
+}
+
+input:disabled ~ :is(span, span:after) {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.--is-large {
+  transform: scale(1.3);
+}

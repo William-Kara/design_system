@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcFooterForm from '@/components/QfcFooterForm/QfcFooterForm.vue';
+
+<Meta title="Modules/FooterForm" />
+
+# Definition
+
+QfcFooterForm is used in form pages that requiers minimal footer information.
+
+## Props
+
+The following props are available for the QfcFooter component:
+
+<ArgTypes of={QfcFooterForm} />
+
+# Usage
+
+To use QfcFooter, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/layout/footer.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcFooterForm.scss';
+```
+
+```html
+<template>
+  <QfcFooterForm >
+</template>
+```

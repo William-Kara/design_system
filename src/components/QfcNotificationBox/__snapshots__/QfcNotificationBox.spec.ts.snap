@@ -1,0 +1,8 @@
+// Vitest Snapshot v1
+
+exports[`QfcNotificationBox Component > should render correctly 1`] = `
+"<div data-v-271437d3=\\"\\" class=\\"qfc-notification-box\\">
+  <div data-v-271437d3=\\"\\" class=\\"qfc-notification-box__edge --success\\"></div>
+  <qfc-box-stub data-v-271437d3=\\"\\" size=\\"fullwidth\\" padding=\\"small\\" class=\\"qfc-notification-box__content-container\\"></qfc-box-stub>
+</div>"
+`;

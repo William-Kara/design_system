@@ -1,0 +1,112 @@
+// Colors
+$black: #232323;
+$black-lighten: lighten($black, 3.5%); //#7D7D7D
+$grey-mineshaft: lighten($black, 6.5%); //#343434
+$grey-raven: lighten($black, 6.5%); //#3C3C3C
+$black-hover: lighten($black, 13.9%); //#464646
+$grey-emperor: lighten($black, 18%); //#515151
+$grey-boulder: lighten($black, 35.1%); //#7d7d7d
+$grey-manatee: lighten($black, 44.5%); //#949494
+$grey-alto: lighten($black, 70%); //#d6d6d6
+$white: #fff;
+
+$yellow: #F5DE8D;
+$yellow-darken: darken(desaturate($yellow, 3.87), 10.98);
+
+$green: #44D893;
+$red: #E22B78;
+$orange: #FDD03A;
+
+// Semantic Colors
+$background: $black;
+$background-lighter: $grey-emperor;
+$q-background-card: $grey-mineshaft;
+$text: $white;
+$text-strong: $white;
+$text-grey: $grey-alto;
+
+$primary: $yellow;
+$secondary: $grey-boulder;
+$primary-active: $yellow-darken;
+$secondary-active: $grey-mineshaft;
+
+$info: $yellow;
+$success: $green;
+$warning: $orange;
+$danger: $red;
+
+$border: $grey-manatee;
+$border-hover: $grey-alto;
+
+$hover: $grey-alto;
+$hover-dark: $grey-mineshaft;
+$focus: $yellow;
+$active: $yellow;
+$disabled: $grey-emperor;
+$disabled-2: $grey-manatee; // (used in textfield)
+$hover: $grey-emperor;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// Font
+$family-serif: "Poppins", serif;
+$family-primary: $family-serif;
+
+// Sizing
+// -- Font
+$fs-xxs: 0.6rem;
+$fs-xs: 1rem;
+$fs-s: 1.12rem;
+$fs-m: 1.25rem;
+$fs-m-2: 1.75rem;
+$fs-m-3: 2rem;
+$fs-l: 2.25rem;
+$fs-xl: 2.8rem;
+$fs-xxl: 3.75rem;
+// -- Border radius
+$br-xxs: 0.25rem;
+$br-xs: 0.5rem;
+$br-s: 0.625rem;
+$br-m: 0.75rem;
+$br-l: 1rem;
+
+// Spacing
+
+// -- Generic Space
+$q-generic-space-0: 0.125rem; //2px
+$q-generic-space-1: 0.25rem; //4px
+$q-generic-space-2: 0.5rem; //8px
+$q-generic-space-3: 1rem; //16px
+$q-generic-space-4: 1.5rem; //24px
+$q-generic-space-5: 2rem; //32px
+$q-generic-space-6: 2.5rem; //40px
+$q-generic-space-7: 3rem; //48px
+$q-generic-space-8: 3.5rem; //56px
+$q-generic-space-9: 4rem; //64px
+$q-generic-space-10: 4.5rem; //72px
+
+// -- Gap
+$q-gap-m: $q-generic-space-3;
+$q-gap-l: $q-generic-space-5;
+
+// Border
+$border-default: 1px $grey-manatee solid;
+$border-hover: 1px $hover solid;
+$border-active: 1px $active solid;
+$border-danger: 1px $danger solid;
+$border-disabled: 1px $disabled-2 solid;
+
+// Transition
+$transition-time-fast: 0.15s;
+$transition-time: 0.5s;
+
+// Shadow
+$q-box-shadow: -12px 12px 30px #00000039;
+
+//Section
+$section-padding: 2rem 2.5rem;
+$section-padding-desktop: 2rem 0rem;

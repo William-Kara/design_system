@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcSubtitle from '@/components/QfcSubtitle/QfcSubtitle.vue';
+
+<Meta title="Elements/Heading/Subtitle" />
+
+# Definition & Usage
+
+QfcSubtitles are used in combination with QfcTitles.
+
+## Props
+
+The following props are available for the QfcSubtitle component:
+
+<ArgTypes of={QfcSubtitle} />
+
+## Usage
+
+To use QfcSubtitle, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcSubtitle.scss';
+
+```
+
+```html
+<template>
+  <QfcSubtitle :text="Subtitle" visualLevel="1" />
+</template>
+```

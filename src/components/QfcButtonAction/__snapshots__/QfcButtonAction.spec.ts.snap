@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`QfcButtonAction Component > should render correctly 1`] = `
+"<router-link data-v-17646067=\\"\\" to=\\"/dashboard\\" custom=\\"\\"><button data-v-17646067=\\"\\" class=\\"qfc-btn-action\\" role=\\"link\\"><span data-v-17646067=\\"\\" class=\\"qfc-btn-action__content\\"><span data-v-17646067=\\"\\" class=\\"qfc-btn-action__content__icon material-icons-outlined\\">space_dashboard</span></span>
+    <!--v-if-->
+  </button></router-link>"
+`;

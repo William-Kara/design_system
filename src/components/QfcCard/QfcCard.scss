@@ -1,0 +1,43 @@
+.q-card {
+  padding: $q-generic-space-9 1.5rem;
+  text-align: center;
+  font-weight: $light;
+  display: flex;
+  flex-direction: column;
+  gap: $q-gap-l;
+
+  &__icon {
+    .material-icons-outlined {
+      font-size: $fs-xl;
+    }
+  }
+  &__media {
+    mix-blend-mode: lighten;
+    max-width: 8rem;
+  }
+  &__title {
+    font-weight: $light;
+    font-size: $fs-m-2;
+  }
+  &__content {
+    padding: $q-generic-space-2 1.5rem;
+    font-size: $fs-s;
+    font-weight: $regular;
+    text-align: left;
+    overflow: hidden;
+  }
+}
+@include mobile {
+  .q-card {
+    padding: $q-generic-space-9 1.15rem;
+    gap: $q-gap-m;
+    &__icon {
+      .material-icons-outlined {
+        font-size: $fs-l;
+      }
+    }
+    &--is-medium {
+      max-width: min(100%, 27.4rem);
+    }
+  }
+}

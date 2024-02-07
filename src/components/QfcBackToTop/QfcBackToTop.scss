@@ -1,0 +1,45 @@
+$button-size: 70px;
+$laptop-placement: 5rem;
+$touch-placement: 2.5rem;
+
+.qfc-back-to-top {
+  border-radius: 50%;
+  width: $button-size;
+  height: $button-size;
+  background-color: $yellow;
+  box-shadow: 0 3px 12px #000000;
+  position: fixed;
+  right: $laptop-placement;
+  bottom: $laptop-placement;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    scale: 0.95;
+    transition: scale 0.05s;
+  }
+
+  .material-icons {
+    color: $black;
+  }
+
+  @include touch {
+    bottom: $touch-placement;
+    right: $touch-placement;
+  }
+}
+
+.v-enter-active,
+.v-leave-active, .qfc-back-to-top {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

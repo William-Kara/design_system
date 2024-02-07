@@ -1,0 +1,31 @@
+.qfc-sidebar {
+  height: 100%;
+  width: 24rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $background;
+  transition: $transition-time;
+  box-shadow: 0 3px 6px #00000029;
+  padding: 0 $q-generic-space-4;
+
+  &__header {
+    height: 6.25rem;
+    margin-bottom: $q-generic-space-10;
+    display: flex;
+    justify-content: right;
+
+    button {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+  &--open {
+    transform: translateX(-100%);
+  }
+}

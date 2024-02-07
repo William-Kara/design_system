@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`QfcBanner Component > should render correctly 1`] = `
+"<section data-v-a99819f7=\\"\\" class=\\"qfc-banner hero\\">
+  <div data-v-a99819f7=\\"\\" class=\\"qfc-banner__body hero-body\\" style=\\"background-image: url(undefined);\\"></div>
+</section>"
+`;

@@ -1,0 +1,32 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcNotificationInline from '@/components/QfcNotificationInline/QfcNotificationInline.vue';
+
+<Meta title="Modules/Notifications/NotificationInline" />
+
+# Definition & Usage
+
+## Props
+
+The following props are available for the QfcNotificationInline component:
+
+<ArgTypes of={QfcNotificationInline} />
+
+To use QfcNotificationInline, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcBox.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcNotificationInline.scss';
+```
+
+```html
+<template>
+  <QfcNotificationInline
+    time-ago="1 hour ago"
+    :read="false"
+    @click="click()"
+    button="Validate"
+    description="Description content"
+    tag="Tag filter"
+  />
+</template>
+```

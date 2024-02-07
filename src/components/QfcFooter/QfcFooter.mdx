@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcFooter from '@/components/QfcFooter/QfcFooter.vue';
+
+<Meta title="Modules/Footer" />
+
+# Definition
+
+QfcFooter is placed at the bottom of the page.
+
+## Props
+
+The following props are available for the QfcFooter component:
+
+<ArgTypes of={QfcFooter} />
+
+# Usage
+
+To use QfcFooter, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/layout/footer.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcFooter.scss';
+```
+
+```html
+<template>
+  <QfcFooter >
+</template>
+```

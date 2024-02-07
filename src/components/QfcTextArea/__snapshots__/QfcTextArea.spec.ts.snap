@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`QfcTextArea Component > should render correctly 1`] = `
+"<div data-v-cc2c18eb=\\"\\" class=\\"text-field\\"><textarea data-v-cc2c18eb=\\"\\" id=\\"string\\" style=\\"background-color: rgb(204, 204, 204);\\" name=\\"string\\" placeholder=\\"string\\" minlength=\\"0\\" maxlength=\\"0\\" class=\\"text-field__input is-error\\"></textarea><label data-v-cc2c18eb=\\"\\" for=\\"string\\" class=\\"text-field__label\\" style=\\"background-color: rgb(204, 204, 204);\\">string</label>
+  <p data-v-cc2c18eb=\\"\\" class=\\"text-field__error-message\\">string</p>
+</div>"
+`;

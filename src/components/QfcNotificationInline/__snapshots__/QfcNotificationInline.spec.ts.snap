@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcNotificationInline Component > should render correctly 1`] = `"<qfc-notification-box-stub data-v-f86edb4b=\\"\\" type=\\"info\\"></qfc-notification-box-stub>"`;

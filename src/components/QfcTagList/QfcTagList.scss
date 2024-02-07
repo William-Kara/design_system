@@ -1,0 +1,8 @@
+.qfc-tag__list {
+  span {
+    margin-bottom: $q-generic-space-3;
+  }
+  span:not(:last-child) {
+    margin-right: $q-generic-space-2;
+  }
+}

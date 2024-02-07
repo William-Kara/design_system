@@ -1,0 +1,52 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+import foundations from '@/styles/foundations.module.scss';
+
+<Meta title="Foundations/Colors" />
+
+# Greys
+
+There are 7 shades of grey, ranging from black (darkest) to grey-alto (lightest).
+
+Some of the use cases are listed below:
+
+- **black**: background, button labels
+- **black-lighten**: banners
+- **grey-mineshaft**: cards
+- **black-hover**: button hover
+- **grey-emperor**: tags, disabled buttons
+- **grey-boulder**: button borders
+- **grey-manatee**: button disabled labels
+- **grey-alto**: button disabled labels
+
+<ColorPalette>
+  <ColorItem
+    title="Greys"
+    subtitle="Some of the greys"
+    colors={{
+      black: foundations.black,
+      'black-lighten': foundations['black-lighten'],
+      'grey-mineshaft': foundations['grey-mineshaft'],
+      'black-hover': foundations['black-hover'],
+      'grey-emperor': foundations['grey-emperor'],
+      'grey-boulder': foundations['grey-boulder'],
+      'grey-manatee': foundations['grey-manatee'],
+      'grey-alto': foundations['grey-alto'],
+      white: foundations.white,
+    }}
+  />
+</ColorPalette>
+
+# Primary colors
+
+<ColorPalette>
+  <ColorItem title="Yellow" subtitle="yellow" colors={[foundations['yellow']]} />
+  <ColorItem title="Yellow" subtitle="yellow-darken" colors={[foundations['yellow-darken']]} />
+</ColorPalette>
+
+# Notifications
+
+<ColorPalette>
+  <ColorItem title="Green" subtitle="green" colors={[foundations.green]} />
+  <ColorItem title="Red" subtitle="red" colors={[foundations.red]} />
+  <ColorItem title="Orange" subtitle="orange" colors={[foundations.orange]} />
+</ColorPalette>

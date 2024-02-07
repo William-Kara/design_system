@@ -1,0 +1,25 @@
+.qfc-subtitle {
+  &.is-1 {
+    font-weight: $semibold;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+
+  &.is-2 {
+    font-weight: $semibold;
+    font-size: 1.375rem;
+    letter-spacing: 0.15;
+  }
+
+  &.is-3 {
+    font-weight: $semibold;
+    font-size: 1.25rem;
+    letter-spacing: 0.15;
+  }
+
+  &.is-4 {
+    font-weight: $medium;
+    font-size: 1.25rem;
+    letter-spacing: 0.15;
+  }
+}

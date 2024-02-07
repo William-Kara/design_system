@@ -1,0 +1,60 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import { Story } from '@storybook/addon-docs';
+import QfcButton from '@/components/QfcButton/QfcButton.vue';
+
+<Meta title="Elements/Buttons/Button" />
+
+# Definition
+
+The QfcButton is clickable element which can be used in forms, or anywhere that needs simple validation functionality.
+
+This button may display text with ou without icons and has different appearances. Use a "Primary" button to call attention to the main action. Don't use multiple primary buttons on one page and use a "Secondary" button for secondary actions, such as “Cancel".
+
+## Props
+
+The following props are available for the QfcButton component:
+
+<ArgTypes of={QfcButton} />
+
+# Usage
+
+To use QfcButton, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/elements/button.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcButton.scss';
+```
+
+```html
+<template>
+  <QfcButton label="Button1" isDisabled="true" secondary="true" icon="star" />
+</template>
+```
+
+# Declinaison - Primary
+
+## Button
+
+<Story name="Primary" id="elements-buttons-button--primary" />
+
+## Button with icon
+
+<Story name="Primary" id="elements-buttons-button--primary-with-icon" />
+
+## Button - Disabled
+
+<Story name="Primary" id="elements-buttons-button--primary-disabled" />
+
+# Declinaison - Secondary
+
+## Button
+
+<Story name="Primary" id="elements-buttons-button--secondary" />
+
+## Button with icon
+
+<Story name="Primary" id="elements-buttons-button--secondary-with-icon" />
+
+## Button - Disabled
+
+<Story name="Primary" id="elements-buttons-button--secondary-disabled" />

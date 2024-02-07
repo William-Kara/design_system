@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcLink from '@/components/QfcLink/QfcLink.vue';
+
+<Meta title="Elements/Link" />
+
+# Definition
+
+QfcLink component is typically used to create a clickable element that redirects
+the user to a different page or URL when clicked. It can be used to navigate
+between pages within a web application, or to open external links in a new window
+or tab.
+
+---
+
+## Props
+
+The following props are available for the QfcLink component:
+
+<ArgTypes of={QfcLink} />
+
+You may also use it without isExternalLink prop in that case it will use the default value which is false.
+
+# Usage
+
+To use QfcHeader, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcLink.scss';
+```

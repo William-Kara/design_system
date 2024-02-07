@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`Checkbox Component > should render correctly 1`] = `"<label data-v-36e326d9=\\"\\" class=\\"qfc-checkbox\\"><input data-v-36e326d9=\\"\\" name=\\"checkbox\\" type=\\"checkbox\\" value=\\"false\\"><span data-v-36e326d9=\\"\\" class=\\"qfc-checkbox__checkmark\\"></span><span data-v-36e326d9=\\"\\" class=\\"qfc-checkbox__label\\">Checkbox</span></label>"`;

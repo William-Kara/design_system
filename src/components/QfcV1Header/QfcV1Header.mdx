@@ -1,0 +1,63 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcV1Header from '@/components/QfcV1Header/QfcV1Header.vue';
+
+<Meta title="Modules/Headers/Header(v1)" />
+
+# Definition & Usage
+
+QfcHeader is placed at the top of the page. It contains a logo, includes the UserMenu component, and the button to
+open the sidebar.
+
+Please note that the QfcCard module is designed to be used in conjunction with the QfcSidebar component to create a complete user interface. The QfcSidebar provides a navigation menu that can be used to navigate to different sections of your application,
+
+## Props
+
+The following props are available for the QfcV1Header component:
+
+<ArgTypes of={QfcV1Header} />
+
+# Usage
+
+To use QfcV1Header, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcV1Header.scss';
+```
+
+```html
+<template>
+  <QfcV1Header
+    v-model:is-sidebar-open="isSidebarOpen"
+    :user-menu="userMenu"
+    :notification-button="notificationButton"
+  />
+</template>
+
+<script>
+  const isSidebarOpen = ref(false);
+  const userMenu = {
+    name: 'John Doe',
+    links: [
+      { link: '/#', title: 'Paramètre du compte' },
+      { link: '/#', title: 'Profil' },
+      { link: '/#', title: 'Déconnexion' },
+    ],
+    avatar: '/avatar.svg',
+  };
+</script>
+```
+
+# Examples
+
+QfcV1Header should be used in conjunction with the QfcSidebar component to create a complete user interface.
+
+```html
+<QfcSidebar :items="sidebarItems" screen-id="main-container" v-model:is-open="isOpen" />
+<main id="main-container">
+  <QfcV1Header
+    v-model:sidebar-is-open="isOpen"
+    :user-menu="userMenu"
+    :notification-button="notificationButton"
+  />
+</main>
+```

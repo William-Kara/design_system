@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`QfcUserMenu Component > should render correctly 1`] = `
+"<nav data-v-a5e7d66b=\\"\\" class=\\"dropdown\\">
+  <div data-v-a5e7d66b=\\"\\" class=\\"dropdown-trigger\\"><button data-v-a5e7d66b=\\"\\" class=\\"button qfc-dropdown-button\\" aria-haspopup=\\"true\\" aria-controls=\\"dropdown-menu3\\"><span data-v-a5e7d66b=\\"\\" class=\\"qfc-dropdown-avatar__holder\\"><img data-v-a5e7d66b=\\"\\" class=\\"qfc-dropdown-avatar__img\\" src=\\"/avatar.svg\\" width=\\"45\\" height=\\"45\\" alt=\\"avatar\\"></span><span data-v-a5e7d66b=\\"\\" class=\\"qfc-dropdown__name\\">John Doe</span><span data-v-a5e7d66b=\\"\\" class=\\"qfc-dropdown-button__icon icon is-small\\"><i data-v-a5e7d66b=\\"\\" class=\\"material-icons-outlined qfc-dropdown-button__icon__inactive\\"> expand_more </i></span></button></div>
+  <div data-v-a5e7d66b=\\"\\" class=\\"dropdown-menu qfc-dropdown-menu\\" id=\\"dropdown-menu3\\" role=\\"menu\\">
+    <div data-v-a5e7d66b=\\"\\" class=\\"dropdown-content qfc-dropdown-menu__content\\">
+      <router-link data-v-a5e7d66b=\\"\\" to=\\"#\\" class=\\"dropdown-item qfc-dropdown-menu__content__item\\" target=\\"_self\\">Paramètre du compte</router-link>
+      <router-link data-v-a5e7d66b=\\"\\" to=\\"#\\" class=\\"dropdown-item qfc-dropdown-menu__content__item\\" target=\\"_self\\">Formule</router-link>
+      <router-link data-v-a5e7d66b=\\"\\" to=\\"#\\" class=\\"dropdown-item qfc-dropdown-menu__content__item\\" target=\\"_self\\">Se déconnecter</router-link>
+    </div>
+  </div>
+</nav>"
+`;

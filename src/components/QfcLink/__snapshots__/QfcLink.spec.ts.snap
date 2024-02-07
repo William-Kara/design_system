@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcLink Component > should render correctly 1`] = `"<span data-v-a949817b=\\"\\"><a data-v-a949817b=\\"\\" class=\\"qfc-link\\" href=\\"https://www.qongzi.com\\" target=\\"_blank\\">Link</a></span>"`;

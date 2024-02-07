@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcCard Component > should render correctly 1`] = `"<qfc-box-stub data-v-4d4fb029=\\"\\" size=\\"medium\\" padding=\\"medium\\" class=\\"q-card q-card--is-medium\\"></qfc-box-stub>"`;

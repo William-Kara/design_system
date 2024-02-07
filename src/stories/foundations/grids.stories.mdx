@@ -1,0 +1,160 @@
+import { Meta } from '@storybook/addon-docs';
+import '@/styles/bulma/grid/columns.scss';
+import '@/styles/bulma/layout/section.scss';
+import '@/styles/bulma/elements/table.scss';
+
+<Meta title="Foundations/Grids" />
+
+# Grids
+
+The grids system used for this website is based on the [Bulma Section](https://bulma.io/documentation/helpers/spacing-helpers/) and [Bulma Container](https://bulma.io/documentation/helpers/spacing-helpers/) for gutters, breakpoints and max-width and on the [Bulma Columns classes](https://bulma.io/documentation/helpers/spacing-helpers/) for columns layouts.
+
+## Breaking points
+
+The breaking points are:
+
+- mobile: up to 768px
+- tablet: from 769px
+- desktop: from 1024px
+- widescreen: from 1216px
+- fullhd: from 1408px
+
+## Section
+
+The section components are simple layout elements with responsive padding that must be used as direct children of the body.
+
+The default padding applied to the section components is like so:
+
+```css
+padding: 3rem 3rem;
+```
+
+## Container
+
+The container is a simple utility element that allows you to center content on the viewports.
+
+This is how the container will behave:
+
+- on Desktop it will have a maximum width of 960px.
+- on Widescreen it will have a maximum width of 1152px.
+- on Fullhd it will have a maximum width of 1344px.
+
+<table class="table is-bordered">
+    <thead>
+    <tr>
+        <th class="bd-is-empty">
+        </th>
+        <th>
+            Below 1023px
+        </th>
+        <th>
+            Desktop Between 1024px and 1215px
+        </th>
+        <th>
+            Widescreen Between 1216px and 1407px
+        </th>
+        <th>
+            FullHD 1408px and above
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <th>Class</th>
+        <th colspan="4" class="has-text-centered">max-width</th>
+    </tr>
+
+    </tbody>
+    <tbody>
+    <tr>
+        <td>.container</td>
+        <td class="has-text-grey-light has-background-white-ter">Full width</td>
+        <td>960px</td>
+        <td>1152px</td>
+        <td>1344px</td>
+    </tr>
+    </tbody>
+
+</table>
+
+## Simple layout
+
+By default Grid layout has a single column.
+
+<div class="column">
+  <p class="example-col">Single column</p>
+</div>
+
+## Columns layout
+
+When the layout is using columns, each column will have an equal width.
+
+<section class="columns">
+  <div class="column">
+    <p class="example-col">First column</p>
+  </div>
+  <div class="column">
+    <p class="example-col">Second column</p>
+  </div>
+  <div class="column">
+    <p class="example-col">Third column</p>
+  </div>
+</section>
+
+<section class="columns">
+  <div class="column">
+    <p class="example-col">First column</p>
+  </div>
+  <div class="column">
+    <p class="example-col">Second column</p>
+  </div>
+  <div class="column">
+    <p class="example-col">Third column</p>
+  </div>
+  <div class="column">
+    <p class="example-col">Fourth column</p>
+  </div>
+</section>
+
+```html
+<section class="section columns">
+  <div class="column">First column</div>
+  <div class="column">Second column</div>
+  <div class="column">Third column</div>
+  <div class="column">Fourth column</div>
+</section>
+```
+
+## Unequal Columns layout
+
+If the layout requires unequal columns layout, you may need to use the following classes on a single column:
+
+- is-three-quarters
+- is-two-thirds
+- is-half
+- is-one-third
+- is-one-quarter
+- is-full
+- is-four-fifths
+- is-three-fifths
+- is-two-fifths
+- is-one-fifth
+
+The other columns will fill up the remaining space automatically.
+
+<div class="columns">
+  <div class="column is-three-quarters">
+    <p class="example-col">is-three-quarters</p>
+  </div>
+  <div class="column is-one-quarter">
+    <p class="example-col">is-one-quarter</p>
+  </div>
+</div>
+
+```html
+<div class="columns">
+  <div class="column is-three-quarters">is-three-quarters</div>
+  <div class="column is-one-quarter">is-one-quarter</div>
+</div>
+```

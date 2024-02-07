@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`Subtitle Component > should render correctly 1`] = `"<div data-v-038822c7=\\"\\" class=\\"qfc-subtitle\\">Subtitle</div>"`;

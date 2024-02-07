@@ -1,0 +1,28 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcBack from '@/components/QfcBack/QfcBack.vue';
+
+<Meta title="Elements/Back" />
+
+# Definition
+
+QfcBack is used to go back to the previous page.
+
+## Props
+
+The following props are available for the QfcBack component:
+
+<ArgTypes of={QfcBack} />
+
+# Usage
+
+To use QfcBack, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcBanner.scss';
+```
+
+```html
+<template>
+  <QfcBack label="Lorem" href="#" />
+</template>
+```

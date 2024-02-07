@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`QfcButton Component > should render correctly 1`] = `
+"<button data-v-f954cdd1=\\"\\" class=\\"button qfc-btn qfc-btn--lg\\" title=\\"Text1\\" aria-disabled=\\"false\\">
+  <!--v-if--> Text1
+</button>"
+`;

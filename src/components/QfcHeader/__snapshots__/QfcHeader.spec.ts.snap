@@ -1,0 +1,17 @@
+// Vitest Snapshot v1
+
+exports[`QfcHeader Component > should render correctly 1`] = `
+"<div data-v-4ee6cf6a=\\"\\" class=\\"navbar\\">
+  <div data-v-4ee6cf6a=\\"\\" class=\\"navbar-brand\\"><a data-v-4ee6cf6a=\\"\\" class=\\"navbar-item\\"><img data-v-4ee6cf6a=\\"\\" src=\\"/logo.svg\\" width=\\"168\\" height=\\"18\\" alt=\\"logo\\"></a><a data-v-4ee6cf6a=\\"\\" role=\\"button\\" class=\\"navbar-burger\\" aria-label=\\"menu\\" aria-expanded=\\"false\\"><span data-v-4ee6cf6a=\\"\\" aria-hidden=\\"true\\"></span><span data-v-4ee6cf6a=\\"\\" aria-hidden=\\"true\\"></span><span data-v-4ee6cf6a=\\"\\" aria-hidden=\\"true\\"></span></a></div>
+  <div data-v-4ee6cf6a=\\"\\" class=\\"navbar-menu\\">
+    <div data-v-4ee6cf6a=\\"\\" class=\\"navbar-menu__header navbar-item\\">
+      <div data-v-4ee6cf6a=\\"\\" class=\\"navbar-menu__title\\">Menu.</div>
+      <qfc-separator-stub data-v-4ee6cf6a=\\"\\" thickness=\\"1px\\" class=\\"navbar-menu__separator\\"></qfc-separator-stub>
+    </div>
+    <qfc-nav-stub data-v-4ee6cf6a=\\"\\" navitems=\\"[object Object],[object Object],[object Object],[object Object]\\"></qfc-nav-stub>
+    <div data-v-4ee6cf6a=\\"\\" class=\\"navbar-end\\">
+      <qfc-nav-item-stub data-v-4ee6cf6a=\\"\\" label=\\"Title 5\\" to=\\"https://test\\" isexternal=\\"true\\"></qfc-nav-item-stub>
+    </div>
+  </div>
+</div>"
+`;

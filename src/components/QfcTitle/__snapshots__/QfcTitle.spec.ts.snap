@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`Title Component > should render correctly 1`] = `"<div data-v-1c9f9ff3=\\"\\" class=\\"qfc-title\\">Title</div>"`;

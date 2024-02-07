@@ -1,0 +1,40 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import { Story } from '@storybook/addon-docs';
+import QfcBox from '@/components/QfcBox/QfcBox.vue';
+
+<Meta title="Elements/Box" />
+
+# Definition
+
+## Props
+
+The following props are available for the QfcBox component:
+
+<ArgTypes of={QfcBox} />
+
+# Usage
+
+To use QfcBox, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/bulma/elements/box.scss';
+@import '@website/design-system-vuejs/dist/styles/components/QfcBox.scss';
+```
+
+```html
+<template>
+  <QfcBox size="medium">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </QfcBox>
+</template>
+```
+
+# Declinaison
+
+## FullWidth
+
+<Story name="Primary" id="elements-box--primary" />
+
+## Medium
+
+<Story name="Medium" id="elements-box--medium" />

@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`QfcTagList Component > should render correctly 1`] = `
+"<div data-v-a9123f78=\\"\\" class=\\"qfc-tag__list\\">
+  <qfc-tag-stub data-v-a9123f78=\\"\\" label=\\"tag1\\"></qfc-tag-stub>
+  <qfc-tag-stub data-v-a9123f78=\\"\\" label=\\"tag2\\"></qfc-tag-stub>
+  <qfc-tag-stub data-v-a9123f78=\\"\\" label=\\"tag3\\"></qfc-tag-stub>
+</div>"
+`;

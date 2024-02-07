@@ -1,0 +1,20 @@
+@import '../../styles/bulma/layout/hero';
+
+.qfc-back {
+  display:table;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+  &__icon  {
+    font-size: 28px;
+    padding: 1rem;
+  }
+  &__link  {
+    font-size: $fs-m;
+    display:table-cell;
+    vertical-align:middle;
+  }
+}
+
+

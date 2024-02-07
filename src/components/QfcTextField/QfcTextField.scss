@@ -1,0 +1,110 @@
+@mixin input-invalid {
+  border: $border-danger;
+  color: $danger;
+  + .text-field__label,
+  ~ .text-field__img {
+    color: $danger;
+  }
+}
+@mixin input-active-focus {
+  border: $border-active;
+  color: $active;
+  + .text-field__label,
+  ~ .text-field__img {
+    color: $active;
+  }
+}
+@mixin input-hover {
+  border: $border-hover;
+  color: $text;
+  + .text-field__label,
+  ~ .text-field__img {
+    color: $text;
+  }
+}
+@mixin input-disabled {
+  border: $border-disabled;
+  cursor: not-allowed;
+  + .text-field__label,
+  ~ .text-field__img {
+    color: $disabled-2;
+    cursor: not-allowed;
+  }
+}
+
+.text-field {
+  position: relative;
+  color: $grey-alto;
+  text-align: right;
+  &__img {
+    position: relative;
+    bottom: 2.25rem;
+    right: 1rem;
+  }
+  &__input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: border $transition-time;
+    border: $border-default;
+    border-radius: $br-xxs;
+
+    &::placeholder {
+      color: transparent;
+    }
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+    &:hover,
+    &:active {
+      @include input-hover;
+    }
+    &:valid {
+      color: $text;
+    }
+    &:focus {
+      @include input-active-focus;
+    }
+    &.is-error {
+      @include input-invalid;
+    }
+    &:disabled {
+      @include input-disabled;
+    }
+    &:invalid {
+      @include input-invalid;
+    }
+  }
+
+  &__label {
+    cursor: text;
+    position: absolute;
+    top: 0.688rem;
+    left: 0.66rem;
+    padding: 0 0.15rem;
+    transition: all $transition-time ease-in-out;
+  }
+
+  &__input:focus + .text-field__label,
+  &__input:not(:placeholder-shown) + .text-field__label {
+    transform: translateY(-1rem);
+    font-size: $fs-xxs;
+    line-height: $fs-xxs;
+  }
+
+  &__error-message {
+    color: $danger;
+    font-size: $fs-xxs;
+    padding-left: 0.85rem;
+  }
+
+  &_img {
+    position: absolute;
+    right: 0.5rem;
+    width: 1.7rem;
+    top: 0.6rem;
+    cursor: pointer;
+  }
+}

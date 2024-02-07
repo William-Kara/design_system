@@ -1,0 +1,29 @@
+import { ArgTypes, Meta } from '@storybook/blocks';
+import QfcTitle from '@/components/QfcTitle/QfcTitle.vue';
+
+<Meta title="Elements/Heading/Title" />
+
+# Definition & Usage
+
+QfcTitles are used as the titles of each section of a page.
+
+## Props
+
+The following props are available for the QfcTitle component:
+
+<ArgTypes of={QfcTitle} />
+
+## Usage
+
+To use QfcTitle, style needs to be imported separately.
+
+```sass
+@import '@website/design-system-vuejs/dist/styles/components/QfcTitle.scss';
+
+```
+
+```html
+<template>
+  <QfcTitle :text="Title" level="1" visualLevel="1" />
+</template>
+```

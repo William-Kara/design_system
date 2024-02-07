@@ -1,0 +1,25 @@
+@import '../../styles/bulma/layout/hero';
+
+.qfc-banner {
+  min-height: 25rem;
+
+  &__body {
+    background-color: $grey-raven;
+    background-size: 25rem;
+    background-position-x: -8rem;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include touch  {
+  .qfc-banner {
+    background-size: 16rem;
+    background-position-x: -6rem;
+  }
+}
+
+

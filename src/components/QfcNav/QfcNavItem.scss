@@ -1,0 +1,29 @@
+
+.navbar-item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-right: 3rem;
+  color: $text;
+  &:hover {
+    border-radius: $br-m;
+    color: $text;
+  }
+  &:focus {
+    background-color: unset;
+    color: inherit;
+  }
+  &.router-link-exact-active {
+    color: $primary;
+    font-weight: $semibold;
+    &:hover {
+      color: $primary;
+      background-color: transparent;
+    }
+  }
+}
+@include desktop {
+  .navbar-item {
+    flex-grow: initial;
+    flex-shrink: initial;
+  }
+}

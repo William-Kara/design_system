@@ -1,0 +1,9 @@
+// Vitest Snapshot v1
+
+exports[`QfcCardSlider Component > should render correctly 1`] = `
+"<div data-v-2eeab328=\\"\\" class=\\"qfc-slider\\">
+  <qfc-card-stub data-v-2eeab328=\\"\\" icon=\\"timer\\" title=\\"Une plateforme accessible à tout moment\\" content=\\"Grâce à une plateforme accessible partout et à tout moment, vous pourrez retrouver vos formations en cours rapidement et reprendre là où vous en étiez.\\" size=\\"medium\\" class=\\"qfc-slider__slide\\"></qfc-card-stub>
+  <qfc-card-stub data-v-2eeab328=\\"\\" icon=\\"explorer\\" title=\\"Des parcours adaptés à vos besoins\\" content=\\"Nous vous offrirons une expérience d’apprentissage sur-mesure avec des parcours de formation adaptés à vos besoins. Chaque module sera pensé de telle manière à ce que vous ayez uniquement accès à l’essentiel.\\" size=\\"medium\\" class=\\"qfc-slider__slide\\"></qfc-card-stub>
+  <qfc-card-stub data-v-2eeab328=\\"\\" icon=\\"explorer\\" title=\\"De la théorie et surtout de la mise en pratique\\" content=\\"Parce que la théorie ça se pratique, nous avons décider de vous proposer de nombreux exercices par module et ainsi de vous faire gagner en confiance. \\" size=\\"medium\\" class=\\"qfc-slider__slide\\"></qfc-card-stub>
+</div>"
+`;

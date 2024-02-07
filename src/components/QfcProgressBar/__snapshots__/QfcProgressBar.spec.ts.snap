@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`QfcProgressBar Component > should render correctly 1`] = `
+"<div data-v-2abc2a22=\\"\\" class=\\"qfc-progress-bar\\" role=\\"progressbar\\" title=\\"Lesson Progression\\" aria-valuenow=\\"10\\" aria-valuemin=\\"0\\" aria-valuemax=\\"100\\">
+  <div data-v-2abc2a22=\\"\\" class=\\"qfc-progress-bar__line\\">
+    <transition-stub data-v-2abc2a22=\\"\\" appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+      <div data-v-2abc2a22=\\"\\" class=\\"qfc-progress-bar__completed\\" style=\\"width: 10%; background-color: rgb(245, 222, 141);\\"></div>
+    </transition-stub>
+  </div>
+  <div data-v-2abc2a22=\\"\\" class=\\"qfc-progress-bar__value\\">10%</div>
+</div>"
+`;

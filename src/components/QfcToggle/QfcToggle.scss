@@ -1,0 +1,67 @@
+$button-width: 3.125rem;
+$button-height: 1.75rem;
+$toggle-diameter: 1.5rem;
+$button-toggle-offset: calc(($button-height - $toggle-diameter) / 2);
+$toggle-shadow-offset: 10px;
+$toggle-wider: 3rem;
+$false-state: $grey-boulder;
+$true-state: $primary;
+$slider-color: $background;
+
+.text {
+  margin-left: 0.5rem;
+  position: relative;
+  bottom: 0.5em;
+  color: $text;
+}
+
+.slider {
+  display: inline-block;
+  width: $button-width;
+  height: $button-height;
+  background-color: $false-state;
+  border-radius: calc($button-height / 2);
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  &:hover,
+  &:focus {
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0) 0 0, rgba(51, 51, 51, 0.54) 0 0 0 2px;
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    width: $toggle-diameter;
+    height: $toggle-diameter;
+    background-color: $slider-color;
+    border-radius: calc($toggle-diameter / 2);
+    position: absolute;
+    top: $button-toggle-offset;
+    transform: translateX($button-toggle-offset);
+    box-shadow: $toggle-shadow-offset 0 calc($toggle-shadow-offset * 4) rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+.switch input[type='checkbox'] {
+  display: none;
+
+  &:checked + .slider {
+    background-color: $true-state;
+
+    &::after {
+      transform: translateX(calc($button-width - $toggle-diameter - $button-toggle-offset));
+      box-shadow: calc($toggle-shadow-offset * -1) 0 calc($toggle-shadow-offset * 4)
+        rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  :checked:active + .slider::after {
+    transform: translateX(calc($button-width - $toggle-wider));
+  }
+}
+
+.is-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

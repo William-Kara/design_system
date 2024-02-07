@@ -1,0 +1,7 @@
+// Vitest Snapshot v1
+
+exports[`QfcBackToTop Component > should render correctly 1`] = `
+"<transition-stub data-v-1dc72de1=\\"\\" appear=\\"false\\" persisted=\\"false\\" css=\\"true\\">
+  <!--v-if-->
+</transition-stub>"
+`;

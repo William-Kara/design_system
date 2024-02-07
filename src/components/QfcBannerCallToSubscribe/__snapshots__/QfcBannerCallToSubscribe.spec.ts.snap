@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`QfcBannerCallToSubscribe Component > should render correctly 1`] = `"<qfc-banner-stub imgsrc=\\"/Q_logo.svg\\" class=\\"qfc-banner\\" data-v-8d931767=\\"\\"></qfc-banner-stub>"`;

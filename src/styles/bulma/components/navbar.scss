@@ -1,0 +1,11 @@
+$navbar-background-color: transparent;
+$navbar-item-color: white;
+$navbar-item-hover-color: white;
+$navbar-item-active-color: $primary;
+
+$navbar-item-active-background-color: transparent;
+
+$navbar-item-hover-background-color: $grey-raven;
+$navbar-tab-hover-background-color: $grey-raven;
+
+@import "bulma/sass/components/navbar";
